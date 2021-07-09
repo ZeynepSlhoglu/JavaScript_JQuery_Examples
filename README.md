@@ -1,5 +1,5 @@
 # JavaScript_JQuery_Examples
-## 
+## Each click on the page creates a new dot and square, respectively.
 ![Ekran Görüntüsü (122)](https://user-images.githubusercontent.com/58303082/125052807-08691300-e0ad-11eb-9ab8-da572b702d8b.png)
 
 ![Ekran Görüntüsü (123)](https://user-images.githubusercontent.com/58303082/125052815-099a4000-e0ad-11eb-9f13-2ad189098366.png)
