@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kare - Daire</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+
+        .circle {
+            position: absolute;
+            background-color: rgb(54, 232, 238);
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+
+        .square {
+            position: absolute;
+            background-color: rgb(207, 57, 57);
+            width: 15px;
+            height: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+
+        $(() => {
+            let count = 0;
+            $(document).click((e) => {
+
+                if (count % 2 == 0) {
+                    let element = `<div class="circle" style="top:${e.pageY}px; left:${e.pageX}px; display:block" ></div>`;
+                    $("body").append(element);
+
+                }
+                else {
+                    let element = `<div class="square" style="top:${e.pageY}px; left:${e.pageX}px; display:block" ></div>`;
+                    $("body").append(element);
+
+                }
+                count++;
+            })
+
+        })
+
+
+
+    </script>
+</body>
+
+</html>
